@@ -29,6 +29,7 @@ Argentina 2022
 Video Merging Script using ffmpeg tool
 --------------------------------------------
 '
+rm "pid.tmp"
 
 i=0
 counter=$(head -n 1 recorder.tmp)
@@ -40,3 +41,5 @@ while [ "$i" -le "$counter" ]; do
 done 
 
 ffmpeg -f concat -i video_list.tmp -c copy output.mp4
+cd ..
+rm "recorder.tmp"
