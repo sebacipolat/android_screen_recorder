@@ -25,7 +25,8 @@
 
 <!-- ABOUT THE PROJECT -->
 ## Acerca De:
-El mundo Android para poder capturar en video la pantalla de un device desde linea de comendas se utiliza [adb screenrecord ](https://developer.android.com/studio/command-line/adb#screenrecord) este pose una limitacion de tiempo maxima de 3 minutos por lo que no sirve para el uso en un CI en donde el proceso a grabar exceda este tiempo.
+El mundo Android para poder capturar en video la pantalla de un device desde linea de comandas se utiliza [adb screenrecord ](https://developer.android.com/studio/command-line/adb#screenrecord) este pose una limitacion de tiempo maxima de 3 minutos por lo que no sirve para el uso en un CI en donde el proceso a grabar exceda este tiempo.
+
 Cuando me tope con esta limitación puse manos a la obra y arme este set de script en bash linux que nos permitira superarlo.
 
 
