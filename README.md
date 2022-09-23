@@ -32,7 +32,7 @@ Cuando me tope con esta limitación puse manos a la obra y arme este set de scri
 
 <!-- Descripción -->
 ## Descripción
-La solución consta de 3 scripts:
+La solución consta de 3 scripts, basados en Bash para Linux
 
 `recorder.sh`
 
