@@ -35,49 +35,49 @@ Cuando me tope con esta limitación puse manos a la obra y arme este set de scri
 ## Descripción
 La solución consta de 3 scripts:
 
-```sh
-   recorder.sh
-   ```
+`recorder.sh`
+
+
    Este es el encargado de ejecutar el comando `adb screenrecord` de manera continua e ir generando los archivos de vide, crearalos archivos temporales 
    `pid.tmp`, `recorder.tmp`, los videos seran guardados en el device en la carpeta `/sdcard` con los nombre `record_video_<number>counter.mp4` 
 
-```sh
-   extract_videos.sh
-   ```
+
+
+`extract_videos.sh`
+
+
    Es el encargado de extraer los videos del device, creara una carpeta en la misma ubicacion del script llamada `videos`.
    Tambien es quien detendra la grabacion mediante
    
-  
-  ```sh
-   extract_videos.sh
-   ```
-   Es el encargado de extraer los videos del device, creara una carpeta en la misma ubicacion del script llamada `videos`.
    
-   
-   ```sh
-   file_merger.sh
-   ```
+
+`file_merger.sh`
+
+
    En base a los videos extraidos por el script previo, realizara un merge de todos los videos utilizando la tool `ffmpeg`
    a un archivo final llamada `output.mp4`
    
    
    
    <!-- Usage -->
-## Uso
+# Uso
 
-#Inicio Captura
+## Inicio Captura
+
 Para comenzar una grabación en un CI por ejemplo el comando `recorder.sh` debe ejecutarse en background ya que sino quedaria bloqueado el hilo de ejecución.
 ```sh
 nohup sh recorder.sh &>/dev/null &
 ```
 
-#Extracción de Videos
+## Extracción de Videos
+
 Cuando se dese detener la grabación y extraer los videos, deberemos ejecutar lo siguiente:
 ```sh
 sh extract_videos.sh
 ```
 
-#Unir Videos
+## Unir Videos
+
 Al terminar la extracción tendremos en la carpeta `/videos` la cantidad de videos que se hayan capturando
 para poder unirlos deberemos ejecutar
 ```sh
