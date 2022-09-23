@@ -45,6 +45,7 @@ La solución consta de 3 scripts:
    extract_videos.sh
    ```
    Es el encargado de extraer los videos del device, creara una carpeta en la misma ubicacion del script llamada `videos`.
+   Tambien es quien detendra la grabacion mediante
    
   
   ```sh
@@ -58,3 +59,7 @@ La solución consta de 3 scripts:
    ```
    En base a los videos extraidos por el script previo, realizara un merge de todos los videos utilizando la tool `ffmpeg`
    a un archivo final llamada `output.mp4`
+   
+   <!-- Usage -->
+## Uso
+Para comenzar una grabación en un CI por ejemplo el comando `recorder.sh` debe ejecutarse en background ya que sino quedaria bloqueado el hilo de ejecución.
