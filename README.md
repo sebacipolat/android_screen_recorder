@@ -16,9 +16,8 @@
   <h2 align="center">Android Screen Recorder</h3>
 
   <p align="center">
-    Set de script para grabar la pantalla de un device android y superar la limitacion de 3 minutos del adb screenrecord!
+    Set de script para capturar en video la pantalla de un device android y superar la limitacion de 3 minutos del adb screenrecord
     <br />
-    <a href="https://medium.com/@sebastiancipolat/monitor-de-scoring-app-en-slack-319bd5a41516"><strong>Articulo en medium relacionado. »</strong></a>
     <br />
   </p>
 </div>
