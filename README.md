@@ -38,7 +38,23 @@ La solución consta de 3 scripts:
 ```sh
    recorder.sh
    ```
-   Este es el encargado de ejecutar el comando `adb screenrecord` de manera continua e ir generando los archivos de vide, creara un archivo temporal 
-   `pid.tmp`, los videos seran guardados en el device en la carpeta `/sdcard` con los nombre `record_video_<number>counter.mp4` 
+   Este es el encargado de ejecutar el comando `adb screenrecord` de manera continua e ir generando los archivos de vide, crearalos archivos temporales 
+   `pid.tmp`, `recorder.tmp`, los videos seran guardados en el device en la carpeta `/sdcard` con los nombre `record_video_<number>counter.mp4` 
 
- Ejecutar app.js
+```sh
+   extract_videos.sh
+   ```
+   Es el encargado de extraer los videos del device, creara una carpeta en la misma ubicacion del script llamada `videos`.
+   
+  
+  ```sh
+   extract_videos.sh
+   ```
+   Es el encargado de extraer los videos del device, creara una carpeta en la misma ubicacion del script llamada `videos`.
+   
+   
+   ```sh
+   file_merger.sh
+   ```
+   En base a los videos extraidos por el script previo, realizara un merge de todos los videos utilizando la tool `ffmpeg`
+   a un archivo final llamada `output.mp4`
