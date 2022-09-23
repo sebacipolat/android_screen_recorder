@@ -34,7 +34,7 @@ echo "Kill screenrecord process.."
 pid=$(head -n 1 pid.tmp)
 kill  $pid
 wait $pid
-pkill "record.sh"
+pkill -f "record.sh"
 
 echo "Start Extracting Videos.."
 
