@@ -81,6 +81,6 @@ sh extract_videos.sh
 Al terminar la extracción tendremos en la carpeta `/videos` la cantidad de videos que se hayan capturando
 para poder unirlos deberemos ejecutar
 ```sh
-sh file_merger.sh.sh
+sh file_merger.sh
 ```
 
