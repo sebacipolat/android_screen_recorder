@@ -34,9 +34,8 @@ counter=$(head -n 1 $file_counter)
 pid=$(pgrep -o "recorder.sh")
 kill -9 $pid
 
-if [ ! -d "extracted_videos" ]; then
-    mkdir "extracted_videos"
-fi
+mkdir "extracted_videos"
+
 if [  -d "video_list.tmp" ]; then
     rm "video_list.tmp"
 fi
