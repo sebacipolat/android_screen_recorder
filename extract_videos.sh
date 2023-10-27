@@ -31,6 +31,9 @@ echo ""
 file_counter="video_counter.txt"
 counter=$(head -n 1 $file_counter)
 
+pid=$(pgrep -o "recorder.sh")
+kill -9 $pid
+
 if [ ! -d "extracted_videos" ]; then
     mkdir "extracted_videos"
 fi
