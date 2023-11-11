@@ -76,11 +76,7 @@ Cuando se dese detener la grabación y extraer los videos, deberemos ejecutar lo
 sh extract_videos.sh
 ```
 
-## Unir Videos
 
-Al terminar la extracción tendremos en la carpeta `/videos` la cantidad de videos que se hayan capturando
-para poder unirlos deberemos ejecutar
-```sh
 sh file_merger.sh
 ```
 
